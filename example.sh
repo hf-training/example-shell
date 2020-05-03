@@ -1,10 +1,11 @@
 #/bin/sh
 
-i=1
-while [ $i -le 100 ]
+echo "------------------------------------------------"
+echo "Starting up"
+echo "------------------------------------------------"
+
+while true
 do
- # your-unix-command-here
- echo Hello World $i
- true $(( i++ ))
- sleep 1
+ echo Hello World
+ sleep 10
 done
