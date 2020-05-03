@@ -1,19 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: echo-server
+  name: example-shell
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: echo-server
+      app: example-shell
   template:
     metadata:
       labels:
-        app: echo-server
+        app: example-shell
     spec:
       containers:
-      - name: echo-server
-        image: miketonks/echo-server:latest
-        ports:
-        - containerPort: 8080
+      - name: example-shell
+        image: headforwards/example-shell:latest
